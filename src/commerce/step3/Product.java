@@ -1,3 +1,5 @@
+package commerce.step3;
+
 public class Product {
     private String name;
     private Integer price;
