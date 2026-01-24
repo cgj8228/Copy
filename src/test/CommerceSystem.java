@@ -1,5 +1,2 @@
-package test;
-
-public class CommerceSystem {
-
+package test;public class CommerceSystem {
 }
