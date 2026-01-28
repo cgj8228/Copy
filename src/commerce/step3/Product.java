@@ -17,6 +17,7 @@ public class Product {
         return this.name + " | " + this.price + " | " + this.description;
     }
 
+
     public String getMyInfo(){
         return this.name + " | " + this.price + " | " + this.description+ " | " +this.count;
     }

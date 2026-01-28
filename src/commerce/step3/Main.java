@@ -12,6 +12,7 @@ public class Main {
         commerceSystem.start();
     }
 
+
     public static List<Category> createCategory(){
         List<Category> categoryList = new ArrayList<>();
 

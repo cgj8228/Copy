@@ -13,6 +13,7 @@ public class CommerceSystem {
         this.categoryList = categoryList;
     }
 
+
     // 프로그램 시작
     public void start(){
         while (true) {
