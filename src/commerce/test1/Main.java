@@ -1,4 +1,4 @@
-package commerce.step3;
+package commerce.test1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,12 +15,12 @@ public class Main {
     public static List<Category> createCategory(){
         List<Category> categoryList = new ArrayList<>();
 
-        List<Product> productList = new ArrayList<Product>();
-        productList.add(new Product("Galaxy S24", 1200000, "최신 스마트폰", 50));
-        productList.add(new Product("iPhone 16", 1350000, "Apple의 최신 스마트폰", 50));
-        productList.add(new Product("MacBook Pro", 2400000, "M3 칩셋이 탑재된 노트북", 50));
-        productList.add(new Product("AirPods Pro", 350000, "노이즈 캔슬링 무선 이어폰", 50));
-        categoryList.add(new Category(productList,"전자제품"));
+        List<Product> productList1 = new ArrayList<Product>();
+        productList1.add(new Product("Galaxy S24", 1200000, "최신 스마트폰", 50));
+        productList1.add(new Product("iPhone 16", 1350000, "Apple의 최신 스마트폰", 50));
+        productList1.add(new Product("MacBook Pro", 2400000, "M3 칩셋이 탑재된 노트북", 50));
+        productList1.add(new Product("AirPods Pro", 350000, "노이즈 캔슬링 무선 이어폰", 50));
+        categoryList.add(new Category(productList1,"전자제품"));
 
         List<Product> productList2 = new ArrayList<Product>();
         productList2.add(new Product( "아디다스 아디제로 EVO SL", 135000, "아디다스 러닝화", 40));
