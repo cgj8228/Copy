@@ -1,4 +1,4 @@
-package test;
+package commerce.step3;
 
 public class Product {
     private String name;
@@ -6,7 +6,7 @@ public class Product {
     private String description;
     private Integer count;
 
-    public Product(String name,Integer price, String description, Integer count){
+    public Product(String name, Integer price, String description, Integer count){
         this.name = name;
         this.price = price;
         this.description = description;
@@ -14,11 +14,10 @@ public class Product {
     }
 
     public String getMySimpleInfo(){
-        return this.name +" | "+ this.price+" | "+this.description;
+        return this.name + " | " + this.price + " | " + this.description;
     }
 
     public String getMyInfo(){
-        return this.name +" | "+ this.price+" | "+this.description+" | "+this.count;
+        return this.name + " | " + this.price + " | " + this.description+ " | " +this.count;
     }
-
 }

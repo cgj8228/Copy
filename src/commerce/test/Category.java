@@ -1,30 +1,32 @@
 package test;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class Category {
+    private List<Product> productList;
+    private String name;
 
-    public static void main(String[] args) {
-        List<Product> productList = new ArrayList<>();
+    public Category(List<Product> productList, String name){
+        this.productList=productList;
+        this.name=name;
+    }
 
+    public String getName(){
+        return this.name;
+    }
 
-        System.out.println("[ 실시간 커머스 플랫폼 - 전자제품 ]");
-        productList.add(new Product("Galaxy S25", 1200000,"최신 안드로이드 스마트폰",50));
-        productList.add(new Product("iPhone 16", 110000,"최신 안드로이드 스마트폰",50));
-        productList.add(new Product("MacBook Pro", 10000,"최신 안드로이드 스마트폰",50));
-        productList.add(new Product("AirPods Pro", 9000,"최신 안드로이드 스마트폰",50));
-
-        while(true) {
+    // 카테고리 제품 출력
+    public void start(){
             Scanner sc = new Scanner(System.in);
-
+        while(true) {
+            System.out.println("[ " + this.name + " 카테고리 ]");
             for (Integer index = 0; productList.size() > index; index++) {
                 System.out.println(index + 1 + ". " + productList.get(index).getMySimpleInfo());
             }
 
             Integer result = 0;
-            System.out.println("0. 종료           | 프로그램 종료");
+            System.out.println("0. 뒤로가기");
             try {
                 result = sc.nextInt();
             }catch (Exception e){
