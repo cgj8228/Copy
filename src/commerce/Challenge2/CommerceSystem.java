@@ -1,4 +1,4 @@
-package commerce.test1;
+package commerce.Challenge2;
 
 import java.util.List;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package commerce.test1;
+package commerce.Challenge2;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package commerce.test1;
+package commerce.Challenge2;
 
 import java.util.InputMismatchException;
 import java.util.List;
@@ -55,7 +55,7 @@ public class Category {
             // 구매 > 재고
             System.out.printf("몇개 구매 하시겠습니까?: ");
 
-            if (buy > productList){
+            if (buy > select.getCount()){
                 System.out.println("재고 보다 많은 양을 입력하였습니다.");
                 continue;
             }

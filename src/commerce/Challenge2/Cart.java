@@ -1,4 +1,4 @@
-package commerce.test1;
+package commerce.Challenge2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ public class Cart {
     }
 
 
-    public void addCartItemList(Product product,Integer quantity){
+    public void addCartItemList(Product product, Integer quantity){
         for (CartItem cartItem : cartItemList) {
             if(cartItem.getProduct().getName().equals(product.getName())){
                 cartItem.setQuantity(cartItem.getQuantity()+quantity);
@@ -43,7 +43,7 @@ public class Cart {
         return total;
     }
 
-    public void deductedProduct(Product product,Integer buy){
+    public void deductedProduct(Product product, Integer buy){
         product.setCount(product.getCount()-buy);
     }
 

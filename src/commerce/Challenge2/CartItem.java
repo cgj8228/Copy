@@ -1,4 +1,4 @@
-package commerce.test1;
+package commerce.Challenge2;
 
 public class CartItem {
     private Product product;
