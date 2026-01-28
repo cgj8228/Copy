@@ -1,35 +1,36 @@
-package test;
+package commerce.test;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class CommerceSystem {
-    private List<Category> categoryList; // new ArrayList()<> 초기값 필요없음, 카테고리로 받으면 제품을 못받지 않나?
+    // 필드
+    Scanner sc = new Scanner(System.in);
+    private List<Category> categoryList;
 
-    public CommerceSystem(List<Category> categoryList) {
+    // 생성자
+    public CommerceSystem(List<Category> categoryList){
         this.categoryList = categoryList;
     }
 
-    // 메인 커머스 시스템
-    public void start() {
+    // 메인 화면
+    public void start(){
         while (true) {
-
-            Scanner sc = new Scanner(System.in);
-
             System.out.println("[ 실시간 커머스 플랫폼 메인 ]");
-            for (Integer index = 0; categoryList.size() > index; index++) { // 제품 출력
+            for (Integer index = 0; index < categoryList.size(); index++) {
                 System.out.println(index + 1 + ". " + categoryList.get(index).getName());
             }
-            System.out.println("0. 종료           | 프로그램 종료");
 
-            Integer result = sc.nextInt();
-
-            if (result > 0 && categoryList.size()>=result){ // 번호 입력시 필터링
-                categoryList.get(result-1).start(); // 입력한 카테고리로 이동
+            Integer result = sc.nextInt(); // 카테고리 선택
+            
+            // 카테고리 제품 들어가기 선택
+            if (result>0 && categoryList.size()+1 >= result){
+                categoryList.get(result-1).start();
             }else {
                 break;
             }
+
+            // 몇개를 장바구니에 담을건지 물어봐야겠지? 그리고 장바구니에 넣어야겠지?
         }
     }
 }

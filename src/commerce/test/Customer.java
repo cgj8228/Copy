@@ -1,4 +1,4 @@
-package test;
+package commerce.test;
 
 public class Customer {
     private String name;
