@@ -1,6 +1,5 @@
-package commerce.test1;
+package commerce.test;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 

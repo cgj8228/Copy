@@ -1,7 +1,11 @@
 package commerce.test;
 
 public class Customer {
-    private String name;
-    private String email;
-    private String grade;
+    private String name = "giljung";
+    private String email = "choil8228@gmail.com";
+    private CustomerGrade grade = CustomerGrade.SILVER; // [수정] String -> Enum
+
+    public String getName() { return name; }
+    public String getEmail() { return email; }
+    public CustomerGrade getGrade() { return grade; }
 }
